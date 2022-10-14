@@ -107,7 +107,7 @@ pocetak=int('1641528000') #2021-09-25 00:00:00  UVEK GLEDAMO GMT!
 kraj=int('1641531600')    #2021-09-25 01:00:00
 #print((datetime.utcfromtimestamp(kraj).strftime('%Y-%m-%d %H:%M:%S')))
 
-mojaFunkcija('Dogecoin',pocetak,kraj)
+mojaFunkcija('Bitcoin',pocetak,kraj)
 df=pd.DataFrame(
     {
         'Date': datumi,
@@ -125,5 +125,5 @@ df=pd.DataFrame(
     }
 )
 df = df.sort_values(by="Date",ascending=False)
-df.to_csv('vaderDoge.csv', header=True, index=False)
+df.to_csv('vader.csv', header=True, index=False)
 print(f'polarities: {polarities}')
